@@ -1,10 +1,3 @@
-# Source me. Shared-GPU helpers for ANCHOR chains.
-# ONLY the GPUs in ANCHOR_GPUS are ever used (default 0,1: the ones allocated to us). Never touch other GPUs or others' jobs.
-# wait_free N          block until an allowed GPU has >= N GB free, then export CUDA_VISIBLE_DEVICES to it
-# share N              vLLM gpu_memory_utilization for N GB on a 96 GB card
-# gpu_run N LOG TOK cmd  QUEUED GPU job: takes the start lock (one model load at a time across all chains), waits for
-#                      N GB on an allowed GPU, starts cmd, keeps the lock until the model has taken its memory, then
-#                      releases it; success when TOK is in LOG; retries up to 8 times
 export ANCHOR_GPUS=${ANCHOR_GPUS:-0,1}
 GPU_LOCK=~/anchor/.gpu_start.lock
 wait_free () {
