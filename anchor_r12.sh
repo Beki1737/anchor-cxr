@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 12 = full-cache QA + segmentation bias check + E1 corpus-extraction pilot. MobaXterm:
-#   bash ~/anchor/code/anchor_r12.sh
-# Log: ~/anchor/logs/r12.log (send back). Labelling sheet: ~/anchor/work/e1_label_200.csv (local only, never upload)
-# Needs in ~/anchor/code/: seg_bias_check.py, corpus_extract.py
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r12.log
