@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r31.sh): ONE-SHOT test-split run with the frozen configuration.
-#   valid judges for the frozen config -> MedGemma B0 on test -> claims -> E3 RAG on test -> candidates -> probe ->
-#   frozen apply -> CRIMSON + GREEN -> summary -> fast metrics. Log: ~/anchor/logs/test_run.log
+
 set -u
 C=~/anchor/code; J="python $C/judge_vllm.py"
 lowgpu () { nvidia-smi --query-gpu=index,memory.used --format=csv,noheader,nounits | sort -t, -k2 -n | head -1 | cut -d, -f1; }
