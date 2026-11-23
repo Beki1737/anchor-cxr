@@ -1,16 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 48 (Prof. Jang's review). VALIDATION + MIMIC by default; the test split is read ONLY with TEST=1 (gate).
-#   A  E23 end-to-end certificate (laterality inside the guarantee)            [small GPU, minutes]
-#   B  E24 anatomical vs global vs prior evidence ablation                     [small GPU, minutes]
-#   C  E25 clinically important findings (valid folds 2-3, MIMIC + radiologists) [small GPU, minutes]
-#   D  E24 CRIMSON + GREEN on valid for the evidence variants                  [GPU, ~2 h]
-#   E  E26 second generator: Lingshu-7B drafts -> claims -> ANCHOR-L (valid + MIMIC) -> judges   [GPU, ~8-12 h]
-#   F  TEST=1 only: E23 --test, E25 --split test, E26 on test (+ judges)        [GATED, needs the author's go]
-# Start: nohup bash ~/anchor/code/anchor_r48.sh > /dev/null 2>&1 &
-# Later, ONLY after the author approves the test looks:  TEST_ONLY=1 nohup bash ~/anchor/code/anchor_r48.sh > /dev/null 2>&1 &
-#   (TEST_ONLY writes ~/anchor/logs/r48_test.log)
-# Watch: tail -f ~/anchor/logs/r48.log     Done at R48_DONE. Send back the WHOLE log (raw).
-# Needs in ~/anchor/code/: e2x_common.py e23_e2e.py e24_evidence.py e25_findings.py e26_plugin.py e48_paired.py anchor_r48.sh
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r48.log; [ "${TEST_ONLY:-0}" = 1 ] && LOG=~/anchor/logs/r48_test.log
