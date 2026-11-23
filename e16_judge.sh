@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r38.sh): CRIMSON + GREEN for the E16 valid-eval reports, then the summary vs frozen ANCHOR.
-# Log: ~/anchor/logs/e16_judge.log
+
 set -u
 C=~/anchor/code; J="python $C/judge_vllm.py"; source $C/gpu_wait.sh
 echo "e16_judge start $(date)"
