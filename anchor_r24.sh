@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 24 = (A) score both E1 sheets (gate, CIs, error codes), (B) one-page E3 summary + CheXbert strata,
-# (C) D40 strata re-run on the better v2 labels, (D) background: E1 extractor A/B test, Qwen2.5-14B v2 vs 32B (fp8),
-# on a third sentence pool. MobaXterm:   bash ~/anchor/code/anchor_r24.sh
-# Log: ~/anchor/logs/r24.log (send back).
-# Needs in ~/anchor/code/: score_labels.py, strata.py, corpus_extract_v2.py, e3_summary.py (all updated/new)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r24.log
