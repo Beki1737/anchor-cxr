@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 43 = (a) print E12 self-consistency results, (b) direct paired FUS vs ANCHOR on valid,
-# (c) reader power check, (d) launch e16_ext.sh: freeze2 ONCE on test (second look) + MIMIC, judges (background).
-# MobaXterm:   bash ~/anchor/code/anchor_r43.sh        Log: ~/anchor/logs/r43.log (send back). Foreground ~1 min.
-# Needs in ~/anchor/code/: e16_paired.py, e16_ext.sh (new), reader_analysis.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r43.log) 2>&1
