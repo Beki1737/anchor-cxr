@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r36.sh): E12 self-consistency baseline on VALID only.
-# 5 stochastic MedGemma samples per study -> same v2 extractor on each -> e12_selfcons.py. Log: ~/anchor/logs/sc_run.log
-# The extractor steps wait until the MIMIC chain has finished its own extraction (MIMIC has priority).
+
 set -u
 C=~/anchor/code; source $C/gpu_wait.sh
 echo "sc_run start $(date)"
