@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 46: E21b only (selective certificate: tie-break fix + MIMIC for both flag rules). CPU, ~2 min.
-# VALIDATION + MIMIC only; test split NOT read. Start: bash ~/anchor/code/anchor_r46.sh   Log: ~/anchor/logs/r46.log
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r46.log) 2>&1
