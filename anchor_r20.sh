@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 20 = (A) GREEN port verdict against the radeval aggregates recorded in r15 (the smoke json for
-# GREEN had been overwritten), (B) GREEN vs CRIMSON disagreement diagnostics on dev200, (C) background GREEN on
-# the valid cohort in parallel with valid_eval.sh. MobaXterm:   bash ~/anchor/code/anchor_r20.sh
-# Log: ~/anchor/logs/r20.log (send back). Needs in ~/anchor/code/: judge_vllm.py (updated), valid_green.sh
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r20.log
