@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 37 = E16 pivot (whole-vocabulary classifier and fusion) at REPORT level, valid only (selection data).
-#   e16 select (fit fold 0, CRC fold 1, writes freeze2.json + valid-eval reports) -> CRIMSON + GREEN -> summary vs frozen ANCHOR
-# Plus: prints the MIMIC frozen-ANCHOR section. Test and MIMIC apply of freeze2 come only after we read this log.
-# MobaXterm:   bash ~/anchor/code/anchor_r37.sh        Log: ~/anchor/logs/r37.log (send back). Judges wait for a GPU.
-# Needs in ~/anchor/code/: e16_fusion.py (new), e8_summary.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r37.log) 2>&1
