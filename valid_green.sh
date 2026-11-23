@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r20.sh): GREEN on the valid cohort, MedGemma B0 vs normal template only
-# (floor sensitivity already shown at dev200, D39). Runs in parallel with valid_eval.sh on another GPU.
-# Log: ~/anchor/logs/valid_green.log
+
 set -u
 C=~/anchor/code; J="python $C/judge_vllm.py"; T="--tag valid"; D=~/anchor/work/judge/valid
 lowgpu () { nvidia-smi --query-gpu=index,memory.used --format=csv,noheader,nounits | sort -t, -k2 -n | head -1 | cut -d, -f1; }
