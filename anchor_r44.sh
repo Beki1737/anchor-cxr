@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 44 (LLM-council round 1): VALIDATION + MIMIC ONLY. The ReXGradient test split is NOT read.
-#   E18 two-sided certification (false findings AND critical misses), label-noise tipping point
-#   E19 anytime-valid monitoring (betting e-process, Ville) -> recalibrate on alarm
-#   E20 label-free covariate-shift weighted CRC + label-free risk estimate
-# Start (survives MobaXterm disconnect):  nohup bash ~/anchor/code/anchor_r44.sh > /dev/null 2>&1 &
-# Watch:  tail -f ~/anchor/logs/r44.log      Done when the log ends with R44_DONE. Send back the WHOLE log (raw).
-# Needs in ~/anchor/code/: e18_cache.py, e18_twosided.py, e19_monitor.py, e20_wcrc.py, anchor_r44.sh (all new)
-# GPU: one short probe pass on GPU 0 or 1 only (about 4-6 GB). Everything else is CPU.
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r44.log) 2>&1
