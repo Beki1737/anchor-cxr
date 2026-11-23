@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 45 (council round 2): VALIDATION + MIMIC ONLY, CPU only (uses the round-44 cache). Test split NOT read.
-#   E20 label-free weighted CRC (fixed: cache keys need allow_pickle)
-#   E21 selective two-sided certificate: certify what is said, FLAG what may silently miss a critical finding
-#   + prints the already-computed FUS-vs-ANCHOR paired test block from e16_ext.log (no new test use)
-# Start:  nohup bash ~/anchor/code/anchor_r45.sh > /dev/null 2>&1 &
-# Watch:  tail -f ~/anchor/logs/r45.log      Done at R45_DONE (about 5-15 min). Send back the WHOLE log (raw).
-# Needs in ~/anchor/code/: e20_wcrc.py (updated), e21_selective.py (new), anchor_r45.sh (new)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r45.log) 2>&1
