@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 22 = (A) E1 label audit, (B) storage probe + optional reversible deletes, (C) CheXbert labeler probe
-# (independent normal/abnormal strata), (D) launch E3 global-RAG baseline in background. MobaXterm:
-#   bash ~/anchor/code/anchor_r22.sh                                   # measure only
-#   DEL_LINGSHU=1 DEL_IUTGZ=1 bash ~/anchor/code/anchor_r22.sh         # also delete Lingshu weights + IU X-ray tgz
-# Log: ~/anchor/logs/r22.log (send back).
-# Needs in ~/anchor/code/: label_audit.py, storage_probe.py, e3_global_rag.py, valid_e3.sh, strata.py, judge_vllm.py, eval_smoke.py
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r22.log
