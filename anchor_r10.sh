@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 10 = cuDNN fix + E0 pilot rerun. Run in MobaXterm:   bash ~/anchor/code/anchor_r10.sh
-# Log: ~/anchor/logs/r10.log (send it back). Needs the updated ~/anchor/code/region_cache.py
-# Changes only our own venv activate script (~/venvs/anchor/bin/activate); nothing system-wide.
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r10.log
