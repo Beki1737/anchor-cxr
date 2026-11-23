@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 32 = prepare external validation (E9): (A) PadChest-GR image extraction in background,
-# (B) PadChest-GR annotation format (aggregates: box value ranges, label / location vocabularies),
-# (C) MIMIC-CXR reports zip layout + 1024 image manifest columns. Read-only except the PadChest extraction.
-# MobaXterm:   bash ~/anchor/code/anchor_r32.sh        Log: ~/anchor/logs/r32.log (send back). ~2 min.
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r32.log
