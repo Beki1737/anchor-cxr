@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 08. Run in MobaXterm:   bash ~/anchor/code/anchor_r08.sh
-# Log: ~/anchor/logs/r08.log  (send it back). Needs ~/anchor/code/build_rex_manifest.py
+
 set -u
 mkdir -p ~/anchor/logs ~/anchor/work
 LOG=~/anchor/logs/r08.log
