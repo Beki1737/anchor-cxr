@@ -1,15 +1,5 @@
 #!/usr/bin/env bash
-# r49 (2026-11-20). GPUs 0,1 only (ANCHOR_GPUS=0,1).
-#   TEST=0 (default): A. claim extraction of ANCHOR-edit outputs, valid + MIMIC (for E27 audit)
-#                     B. E25 MIMIC re-run after patch_e25.py (radiologist block)      -> ~/anchor/logs/r49.log
-#   TEST=1          : C. GATED test looks approved by the author (D94 E25 test, D95 E26 Lingshu test),
-#                        = the TEST block of anchor_r48.sh with every e23_e2e line removed -> ~/anchor/logs/r49_test.log
-# Order:
-#   1) python ~/anchor/code/patch_e25.py
-#   2) nohup bash ~/anchor/code/r49.sh > /dev/null 2>&1 &          # no test data; done at R49_DONE
-#   3) DRY=1 TEST=1 bash ~/anchor/code/r49.sh                      # prints the exact test block, runs nothing; paste it
-#   4) only after Claude confirms the block AND the method-definition gate (D98) is answered:
-#      TEST=1 nohup bash ~/anchor/code/r49.sh > /dev/null 2>&1 &     # done at R49_TEST_DONE
+
 set -u
 mkdir -p ~/anchor/logs
 C=~/anchor/code; J="python $C/judge_vllm.py"; source $C/gpu_wait.sh
