@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 47: E22 normal-referenced region evidence (NRE) for critical-finding admission. VALIDATION ONLY.
-#   0) print the pre-registration and its md5 BEFORE anything runs
-#   1) e22_nre.py: normal banks (train = retrieval database), NRE features, critical scorer (fold 0), thresholds
-#      (fold 1), folds 2-3 evaluation vs frozen FUS-multi + CTRL, S1/S2/S4, reports, freeze3.json   [GPU 0/1, ~8 GB]
-#   2) CRIMSON + GREEN on the two new valid report sets (queued GPU jobs), 3) e22_s3.py: S3 + overall verdict
-# Start:  nohup bash ~/anchor/code/anchor_r47.sh > /dev/null 2>&1 &      Watch: tail -f ~/anchor/logs/r47.log
-# Done at R47_DONE (judges take a few hours). Send back the WHOLE log (raw). Test split and MIMIC are NOT read.
-# Needs in ~/anchor/code/: e22_prereg.md, e22_nre.py, e22_s3.py, anchor_r47.sh (all new)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r47.log) 2>&1
