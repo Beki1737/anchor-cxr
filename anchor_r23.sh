@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 23 = (A) leftover ReXGradient archive parts: verify extraction, delete only with DEL_PARTS=1,
-# (B) relaunch E3 with retries, (C) CheXbert strata (independent check of D40), (D) launch E1 v2 chain. MobaXterm:
-#   DEL_PARTS=1 bash ~/anchor/code/anchor_r23.sh
-# Log: ~/anchor/logs/r23.log (send back).
-# Needs in ~/anchor/code/: corpus_extract_v2.py, chexbert_strata.py, e1v2_chain.sh, valid_e3.sh (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r23.log
