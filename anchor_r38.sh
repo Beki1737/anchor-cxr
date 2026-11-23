@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 38 = (a) fix judge memory (CRIMSON needs gpu-util 0.35) and relaunch the MIMIC + E16 judge chains,
-#                   (b) E17 MIMIC recalibration: frozen scorers, threshold re-estimated on n_cal MIMIC studies.
-# MobaXterm:   bash ~/anchor/code/anchor_r38.sh        Log: ~/anchor/logs/r38.log (send back). Foreground ~5 to 15 min.
-# Needs in ~/anchor/code/: e17_recal.py, e16_judge.sh (new), e9_mimic.sh (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r38.log) 2>&1
