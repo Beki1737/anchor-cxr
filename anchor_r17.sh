@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 17 = (A) RaTEScore retry with a functional test instead of uv pip check,
-# (B) D34 batched vLLM port of GREEN + CRIMSON, validated against radeval. MobaXterm:
-#   bash ~/anchor/code/anchor_r17.sh
-# Log: ~/anchor/logs/r17.log (send back). Needs in ~/anchor/code/: judge_vllm.py (new), eval_smoke.py
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r17.log
