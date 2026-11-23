@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r09.log
