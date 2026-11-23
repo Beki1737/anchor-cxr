@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r43.sh): freeze2 (FUS family, selected on valid, D75) applied ONCE to test
-# (declared second look) and to MIMIC (external), then CRIMSON + GREEN + summaries. GPUs 0/1 only.
-# Log: ~/anchor/logs/e16_ext.log
 set -u
 C=~/anchor/code; J="python $C/judge_vllm.py"; W=~/anchor/work; source $C/gpu_wait.sh
 echo "e16_ext start $(date)"
