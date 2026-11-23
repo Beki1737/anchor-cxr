@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 33 = (A) PadChest-GR extraction with Python (no unzip on devbox), (B) PadChest-GR annotation format,
-# (C) launch E9 MIMIC-CXR external validation with the frozen configuration (background, ~3 to 4 h).
-# MobaXterm:   bash ~/anchor/code/anchor_r33.sh        Log: ~/anchor/logs/r33.log (send back). Foreground ~3 min.
-# Needs in ~/anchor/code/: mimic_manifest.py, e9_mimic_labels.py, mimic_run.sh (new), region_cache.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r33.log
