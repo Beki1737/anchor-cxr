@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r22.sh): E3 on the valid primary cohort.
-# retrieval -> ret1 copy baseline -> MedGemma RAG k=3 -> CRIMSON + GREEN -> paired vs template + strata -> fast metrics.
-# Log: ~/anchor/logs/valid_e3.log
+
 set -u
 C=~/anchor/code; J="python $C/judge_vllm.py"; T="--tag valid_e3"; E="python $C/e3_global_rag.py"
 lowgpu () { nvidia-smi --query-gpu=index,memory.used --format=csv,noheader,nounits | sort -t, -k2 -n | head -1 | cut -d, -f1; }
