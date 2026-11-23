@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 36 = reviewer-proofing. Foreground (CPU + small GPU, ~20 to 40 min):
-#   E11 component ablation at matched certified risk (incl. probe-only classifier, no retrieval)
-#   E10b pointing-game extensions | E15 patient-cluster bootstrap + Holm | E14 independent labeller (CheXbert)
-# Background: e9_mimic.sh (MIMIC, replaces mimic_run.sh) and sc_run.sh (E12 self-consistency baseline, valid only).
-# MobaXterm:   bash ~/anchor/code/anchor_r36.sh        Log: ~/anchor/logs/r36.log (send back)
-# Needs in ~/anchor/code/: e11_ablate.py e12_selfcons.py e14_indep.py e15_stats.py e9_mimic.sh sc_run.sh (new);
-#                          gpu_wait.sh gen_b0.py e10_pointing.py e9_mimic_labels.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r36.log) 2>&1
