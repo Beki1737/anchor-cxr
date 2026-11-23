@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 16 = harness repair (CheXbert patch, RaTEScore via spaCy 3.8 / thinc 8.3 with auto-revert)
-# + rescoring all three B0 models on the fast metrics. MobaXterm:   bash ~/anchor/code/anchor_r16.sh
-# Log: ~/anchor/logs/r16.log (send back). Needs the updated ~/anchor/code/eval_smoke.py
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r16.log
