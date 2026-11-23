@@ -1,0 +1,23 @@
+# never commit data, outputs or credentials
+data/
+outputs/
+results/
+logs/
+cache/
+checkpoints/
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+*.parquet
+*.csv
+*.jsonl
+*.dcm
+*.jpg
+*.png
+*.h5
+.env
+.netrc
+__pycache__/
+.venv/
