@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 35 = relaunch E9 (MIMIC) and E10 (PadChest-GR) as GPU-waiting background chains (lab GPUs are full).
-# MobaXterm:   bash ~/anchor/code/anchor_r35.sh        Log: ~/anchor/logs/r35.log
-# Needs in ~/anchor/code/: gpu_wait.sh, padchest_run.sh (new), mimic_run.sh, gen_b0.py, corpus_extract.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r35.log) 2>&1
