@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 30 = E7 refinements (H12 evidence-gated editing, H13 side-expanded candidates, H11 rare focal findings,
-# H9b simultaneous subgroup validity, H10b learned normality score) + background judges for the new reports.
-# MobaXterm:   bash ~/anchor/code/anchor_r30.sh        Log: ~/anchor/logs/r30.log (send back). Foreground ~10 to 15 min.
-# Needs in ~/anchor/code/: e7_refine.py, valid_e7.sh (new), e5_summary.py, eval_smoke.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r30.log
