@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 13. MobaXterm:   bash ~/anchor/code/anchor_r13.sh
-# A: test CUDA 13 toolkit for vLLM JIT (venv only, applied only if it works)  B: adult cohort + segmentation flags
-# C: full corpus extraction train/valid/test (background, hours)  D: evaluation venv with RadEval (background)
-# E: score E1 labels if the sheet is filled  F: status
-# Log: ~/anchor/logs/r13.log (send back). Needs in ~/anchor/code/: cohort_flags.py, score_labels.py, corpus_extract.py
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r13.log
