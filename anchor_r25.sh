@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 25 = (A) CheXbert strata rerun with errors visible, (B) extractor A/B status / score,
-# (C) background E4a: candidate-pool ceiling + neighbour-vote verification signal (global vs region).
-# MobaXterm:   bash ~/anchor/code/anchor_r25.sh        Log: ~/anchor/logs/r25.log (send back)
-# Needs in ~/anchor/code/: e4a_pool.py, e4a_chain.sh, corpus_extract_v2.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r25.log
