@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 19 = (A) GREEN vLLM port without GREEN's custom tokenizer code (token ids in, ids out),
-# fallback: install matplotlib in the anchor venv and use the repo code; (B) validation vs radeval;
-# (C) launch background large-n scoring on the valid cohort (valid_eval.sh). MobaXterm:
-#   bash ~/anchor/code/anchor_r19.sh
-# Log: ~/anchor/logs/r19.log (send back). Needs in ~/anchor/code/: judge_vllm.py, eval_smoke.py, valid_eval.sh
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r19.log
