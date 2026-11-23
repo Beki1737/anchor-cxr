@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 40 = E17b high-probability recalibration on MIMIC (Learn-then-Test, Hoeffding-Bentkus, delta 0.1).
-# CPU + ~3 GB GPU for the probe (GPUs 0/1 only). Also shows queue status of the background chains.
-# MobaXterm:   bash ~/anchor/code/anchor_r40.sh        Log: ~/anchor/logs/r40.log (send back). ~5 to 10 min.
-# Needs in ~/anchor/code/: e17b_pac.py (new)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r40.log) 2>&1
