@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r35.sh): E9 MIMIC-CXR external validation with the FROZEN ReXGradient configuration.
-# Every GPU step waits until a card has enough free memory (shared lab GPUs) and resumes from finished outputs.
-# Log: ~/anchor/logs/mimic_run.log
+
 set -u
 C=~/anchor/code; J="python $C/judge_vllm.py"; W=~/anchor/work
 source $C/gpu_wait.sh
