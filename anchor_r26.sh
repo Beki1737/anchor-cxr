@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 26 = (A) CheXbert strata (import fixed), (B) background E4b: image-grounded claim verification
-# on a broad candidate pool (MedGemma + Qwen2.5-VL, full image and region crop).
-# MobaXterm:   bash ~/anchor/code/anchor_r26.sh        Log: ~/anchor/logs/r26.log (send back)
-# Needs in ~/anchor/code/: e4b_verify.py, e4b_chain.sh, chexbert_strata.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r26.log
