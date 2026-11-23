@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 41 = build the reader-study packet (D74) while GPUs 0/1 are busy. CPU only, ~1 min.
-# MobaXterm:   bash ~/anchor/code/anchor_r41.sh        Log: ~/anchor/logs/r41.log (send back; counts only)
-# Needs in ~/anchor/code/: reader_packet.py, READER_GUIDE.md (new)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r41.log) 2>&1
