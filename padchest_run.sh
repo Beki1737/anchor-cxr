@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r35.sh): E10 PadChest-GR pointing game. Waits for a GPU with 10 GB free.
-# Log: ~/anchor/logs/padchest_run.log
+
 set -u
 C=~/anchor/code; source $C/gpu_wait.sh
 echo "padchest_run start $(date)"
