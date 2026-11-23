@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-# ANCHOR round 09 = E0 pilot. Run in MobaXterm:
-#   bash ~/anchor/code/anchor_r09.sh                 (keeps the ReXGradient tar parts)
-#   DELETE_PARTS=1 bash ~/anchor/code/anchor_r09.sh  (also deletes the 155 GB tar parts after verification)
-# Log: ~/anchor/logs/r09.log (send it back). Overlays: ~/anchor/work/qa_overlays/ (view in VS Code, never upload).
-# Needs in ~/anchor/code/: build_rex_manifest.py (updated) and region_cache.py
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r09.log
