@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Background (launched by anchor_r23.sh): E1 v2 extractor. devcheck on dev-sheet reports -> full corpus
-# (valid first: needed for strata; then test; then train) -> fresh held-out gate sheet. Log: ~/anchor/logs/e1v2.log
+
 set -u
 C=~/anchor/code; X="python $C/corpus_extract_v2.py"
 FILT='^\(EngineCore|^\(MainProcess|^\(APIServer|Capturing CUDA graphs|Loading safetensors|it/s\]$|^INFO|^WARNING|^$'
