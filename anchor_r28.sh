@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 28 = E5 full pipeline on the whole valid primary cohort:
-# candidates for all studies -> probe scores -> scorer (fold 0) -> CRC calibration (fold 1) -> evaluation (folds 2-3),
-# realized reports, then background judges (CRIMSON, GREEN) + fast metrics.
-# MobaXterm:   bash ~/anchor/code/anchor_r28.sh        Log: ~/anchor/logs/r28.log (send back)
-# Needs in ~/anchor/code/: e5_anchor.py, e5_summary.py, valid_e5.sh (new), e4c_probe.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r28.log
