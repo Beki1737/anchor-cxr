@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 11 = venv cuDNN fix + failure breakdown + full region cache (background). MobaXterm:
-#   bash ~/anchor/code/anchor_r11.sh
-# Log: ~/anchor/logs/r11.log (send back). Full-cache log: ~/anchor/logs/region_full.log
-# Needs in ~/anchor/code/: qa_failures.py (new), region_cache.py (r10 version)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r11.log
