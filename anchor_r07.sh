@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 07. Run in MobaXterm:   bash ~/anchor/code/anchor_r07.sh
-# Everything is also written to ~/anchor/logs/r07.log  -> send that file back.
-# Needs in ~/anchor/code/: mimic_stream_fetch.py  rex_audit.py  padchest_fetch.py  cxas_probe.py
+# ANCHOR round 07
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r07.log
