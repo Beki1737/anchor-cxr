@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 42 = reader-study + E1 second-rater analysis, and the judge summaries that finished overnight.
-# CPU only. MobaXterm:   bash ~/anchor/code/anchor_r42.sh        Log: ~/anchor/logs/r42.log (send back; aggregates only)
-# Needs in ~/anchor/code/: reader_analysis.py (new)
+
 set -u
 mkdir -p ~/anchor/logs
 exec > >(tee ~/anchor/logs/r42.log) 2>&1
