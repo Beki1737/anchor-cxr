@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 34 = E10 PadChest-GR zero-shot grounding (pointing game + side) with the ReXGradient-trained region probe.
-# manifest -> region cache (CXAS + RAD-DINO on 4,555 images) -> pointing game. Runs alongside the MIMIC chain.
-# MobaXterm:   bash ~/anchor/code/anchor_r34.sh        Log: ~/anchor/logs/r34.log (send back). ~5 to 10 min.
-# Needs in ~/anchor/code/: padchest_manifest.py, e10_pointing.py (new)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r34.log
