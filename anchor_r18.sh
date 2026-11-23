@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 18 = (A) GREEN vLLM port rerun (trust_remote_code fix) + validation against radeval,
-# (B) background: MedGemma B0 on the full valid primary cohort (6,743 studies) for large-n metric analysis.
-# MobaXterm:   bash ~/anchor/code/anchor_r18.sh
-# Log: ~/anchor/logs/r18.log (send back). Needs the updated ~/anchor/code/judge_vllm.py
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r18.log
