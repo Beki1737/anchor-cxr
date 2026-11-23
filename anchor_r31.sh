@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 31 = FREEZE the final configuration on valid (scorer, focal offset, CRC thresholds, multi-group thresholds,
-# side resolver, triage with CRC + high-probability thresholds, code checksums), write valid-eval reports, then launch the
-# ONE-SHOT test run in background (B0 + claims + E3 + candidates + probe + frozen apply + judges + metrics, ~6 to 8 h).
-# MobaXterm:   bash ~/anchor/code/anchor_r31.sh        Log: ~/anchor/logs/r31.log (send back now), test_run.log later.
-# Needs in ~/anchor/code/: e8_final.py, e8_summary.py, test_run.sh (new), e4b_verify.py (updated)
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r31.log
