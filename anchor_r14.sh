@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 14 = dev slice + first B0 baseline (MedGemma-4B, 200 dev studies) + E2 harness smoke test.
-# MobaXterm:   bash ~/anchor/code/anchor_r14.sh
-# Log: ~/anchor/logs/r14.log (send back); GREEN runs in background -> ~/anchor/logs/green_smoke.log
-# Needs in ~/anchor/code/: dev_slice.py, gen_b0.py, eval_smoke.py
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r14.log
