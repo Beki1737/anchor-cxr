@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 21 = (A) status, (B) storage inventory + SAFE cleanup only (package caches, regenerable),
-# (C) D40 strata test: B0 vs template on normal vs abnormal valid studies. MobaXterm:
-#   bash ~/anchor/code/anchor_r21.sh
-# Log: ~/anchor/logs/r21.log (send back). Needs ~/anchor/code/strata.py. Nothing under ~/anchor is deleted here.
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r21.log
