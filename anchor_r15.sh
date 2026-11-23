@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# ANCHOR round 15 = B0 for Qwen2.5-VL-7B and Lingshu-7B + fixed harness (RadGraph alias, CheXbert name,
-# RaTEScore traceback) on all three B0 models + CRIMSON in background. MobaXterm:
-#   bash ~/anchor/code/anchor_r15.sh
-# Log: ~/anchor/logs/r15.log ; background: ~/anchor/logs/green_smoke.log, ~/anchor/logs/crimson_smoke.log
-# Needs in ~/anchor/code/: eval_smoke.py (updated), gen_b0.py
+
 set -u
 mkdir -p ~/anchor/logs
 LOG=~/anchor/logs/r15.log
